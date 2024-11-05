@@ -19,7 +19,7 @@ console.log(stringCircum.slice(0, 7));
 
 //    area
 //              tadinya pengen Math.PI*r** ada error di bagian const-nya (Expression Expected)
-let area = Math.PI * r * 5;
+let area = Math.PI * r ** 2;
 const stringArea = String(area);
 console.log(stringArea.slice(0, 7));
 
@@ -34,7 +34,22 @@ console.log(new Date(400));
 const Today = new Date();
 
 //6. date difference
-let initialDate = new Date('2022-01-20')
-let endDate = new Date ('2022-01-22')
-var diff = initialDate.getTime() - endDate.getTime()
-console.log(diff)
+let endDate = new Date("2022-01-22");
+let initialDate = new Date("2022-01-20");
+let diff = endDate.getTime() - initialDate.getTime();
+
+
+/* -------------------------------------------------------------------------- */
+/*                              ka nadif nomor 6                              */
+/* -------------------------------------------------------------------------- */
+
+const date1 = new Date('2023-08-17');
+const date2 = new Date("2023-08-20");
+
+console.log(date1.getTime());
+console.log(date2.getTime());
+const differ = date2.getTime() - date1.getTime();
+console.log(differ);
+
+const differString = new Date(differ);
+console.log(differString);
